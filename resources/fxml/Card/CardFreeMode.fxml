@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.web.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ulb.infof307.g10.app.views.Card.CardFreeModeController">
+    <children>
+        <SplitPane dividerPositions="0.8744" orientation="VERTICAL" prefHeight="400.0" prefWidth="600.0">
+            <items>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                    <children>
+                        <HBox prefHeight="345.0" prefWidth="600.0">
+                            <children>
+                                <AnchorPane prefHeight="345.0" prefWidth="200.0" style="-fx-background-color: #8fbc8f;">
+                                    <children>
+                                        <ImageView fitHeight="135.0" fitWidth="200.0" layoutX="33.0" layoutY="38.0" pickOnBounds="true" preserveRatio="true">
+                                            <image>
+                                                <Image url="@../../png/2639750_app_wallet_icon.png" />
+                                            </image></ImageView>
+                                        <Label layoutX="41.0" layoutY="173.0" prefHeight="21.0" prefWidth="118.0" text="Free Mode" textFill="#778999">
+                                            <font>
+                                                <Font size="17.0" />
+                                            </font>
+                                        </Label>
+                                        <Label layoutX="43.0" layoutY="212.0" text="Best score :">
+                                            <font>
+                                                <Font size="15.0" />
+                                            </font>
+                                        </Label>
+                                        <Label layoutX="42.0" layoutY="258.0" text="Current score :">
+                                            <font>
+                                                <Font size="15.0" />
+                                            </font>
+                                        </Label>
+                                        <Label fx:id="bestScoreLabel" alignment="CENTER" layoutX="148.0" layoutY="209.0" prefHeight="27.0" prefWidth="41.0" style="-fx-background-color: #7eb27e;">
+                                            <font>
+                                                <Font size="16.0" />
+                                            </font></Label>
+                                        <Label fx:id="currentScoreLabel" alignment="CENTER" layoutX="148.0" layoutY="255.0" prefHeight="27.0" prefWidth="41.0" style="-fx-background-color: #7eb27e;">
+                                            <font>
+                                                <Font size="16.0" />
+                                            </font></Label>
+
+
+                                    </children>
+                                </AnchorPane>
+                                <AnchorPane prefHeight="345.0" prefWidth="399.0" style="-fx-background-color: #dcdcdc;">
+                                    <children>
+                                        <Button layoutX="104.0" layoutY="159.0" mnemonicParsing="false" onAction="#onAnswerClicked" prefHeight="24.0" prefWidth="77.0" style="-fx-background-color: #8fbc8f;" text="Answer">
+                                            <font>
+                                                <Font name="System Bold" size="13.0" />
+                                            </font></Button>
+                                        <WebView fx:id="questionView" layoutX="54.0" layoutY="13.0" prefHeight="95.0" prefWidth="301.0" />
+                                        <WebView fx:id="answerView" layoutX="54.0" layoutY="204.0" prefHeight="127.0" prefWidth="301.0" />
+                                        <CheckBox fx:id="knownAnswerBox" layoutX="223.0" layoutY="164.0" mnemonicParsing="false" text="Known answer" />
+                                        <TextField alignment="CENTER" layoutX="54.0" layoutY="120.0" prefHeight="25.0" prefWidth="301.0" promptText="Answer" />
+                                    </children></AnchorPane>
+                            </children>
+                        </HBox>
+                    </children>
+                </AnchorPane>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="132.0" prefWidth="598.0" style="-fx-background-color: #d3d3d3;">
+                    <children>
+                        <Button fx:id="returnButton" layoutX="207.0" layoutY="11.0" mnemonicParsing="false" onAction="#onReturnClicked" prefHeight="24.0" prefWidth="77.0" style="-fx-background-color: #8fbc8f;" text="Return">
+                            <font>
+                                <Font name="System Bold" size="13.0" />
+                            </font></Button>
+                        <Button fx:id="nextCardButton" layoutX="500.0" layoutY="12.0" mnemonicParsing="false" onAction="#onNextCardClicked" style="-fx-background-color: #8fbc8f;" text="Next Card">
+                            <font>
+                                <Font name="System Bold" size="13.0" />
+                            </font></Button>
+                    </children></AnchorPane>
+            </items>
+        </SplitPane>
+    </children>
+</Pane>

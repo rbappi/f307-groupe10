@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.collections.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.web.*?>
+
+<VBox prefHeight="495.0" prefWidth="707.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ulb.infof307.g10.app.views.Card.AddLatexHTMLCardController">
+    <TextArea fx:id="categoryTextArea" prefHeight="714.0" prefWidth="600.0" promptText="Category">
+        <padding>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+        </padding>
+    </TextArea>
+    <ComboBox fx:id="typeOfCardCombo" onAction="#typeOfCardChanged" promptText="Choose the type of content">
+        <items>
+            <FXCollections fx:factory="observableArrayList">
+                <String fx:value="Simple" />
+                <String fx:value="LaTex(only math)" />
+                <String fx:value="HTML" />
+            </FXCollections>
+        </items>
+    </ComboBox>
+    <HBox>
+            <VBox>
+                <TextArea fx:id="questionTextArea" prefHeight="491.0" prefWidth="354.0" promptText="Question">
+                    <padding>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                    </padding>
+                </TextArea>
+
+                <WebView fx:id="questionwebView" BorderPane.alignment="CENTER" />
+            </VBox>
+            <VBox>
+
+                <TextArea fx:id="answerTextArea" prefHeight="491.0" prefWidth="354.0" promptText="Answer">
+                    <padding>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                    </padding>
+                </TextArea>
+                <WebView fx:id="answerWebView" BorderPane.alignment="CENTER" />
+            </VBox>
+        </HBox>
+        <ButtonBar>
+            <buttons>
+                <Button fx:id="saveButton" onAction="#onSaveButtonClicked" text="Save">
+                    <padding>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                    </padding>
+                </Button>
+                <Button fx:id="returnButton" mnemonicParsing="false" onAction="#returnClicked" prefHeight="37.0" text="Return" />
+            </buttons>
+        </ButtonBar>
+</VBox>

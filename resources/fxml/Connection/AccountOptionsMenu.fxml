@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ulb.infof307.g10.app.views.Connection.AccountOptionsMenuController">
+   <children>
+      <SplitPane dividerPositions="0.8744" orientation="VERTICAL" prefHeight="400.0" prefWidth="600.0">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+               <children>
+                  <HBox prefHeight="345.0" prefWidth="600.0">
+                     <children>
+                        <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #8fbc8f;">
+                           <children>
+                              <Label layoutX="35.0" layoutY="187.0" prefHeight="21.0" prefWidth="128.0" text="Account Menu" textFill="#778999">
+                                 <font>
+                                    <Font size="17.0" />
+                                 </font>
+                              </Label>
+                              <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="25.0" layoutY="21.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../png/2639750_app_wallet_icon.png" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                        </AnchorPane>
+                        <AnchorPane prefHeight="345.0" prefWidth="400.0" style="-fx-background-color: #dcdcdc;">
+                           <children>
+                              <VBox alignment="CENTER" layoutX="109.0" layoutY="74.0" prefHeight="222.0" prefWidth="150.0" spacing="20.0" AnchorPane.bottomAnchor="49.0" AnchorPane.leftAnchor="109.0" AnchorPane.rightAnchor="141.0" AnchorPane.topAnchor="74.0">
+                                 <children>
+                                    <Button fx:id="openMyPackButton" mnemonicParsing="false" onAction="#onMyDeckClick" prefHeight="24.0" prefWidth="150.0" style="-fx-background-color: #8fbc8f;" text="My Deck" textAlignment="CENTER">
+                                       <font>
+                                          <Font name="System Bold" size="13.0" />
+                                       </font>
+                                    </Button>
+                                    <Button fx:id="openStoreButton" mnemonicParsing="false" onAction="#onOpenStoreClick" prefHeight="25.0" prefWidth="150.0" style="-fx-background-color: #8fbc8f;" text="Store">
+                                       <font>
+                                          <Font name="System Bold" size="13.0" />
+                                       </font>
+                                    </Button>
+                                    <Button fx:id="changePasswordButton" mnemonicParsing="false" onAction="#onChangePasswordClick" prefHeight="24.0" prefWidth="154.0" style="-fx-background-color: #8fbc8f;" text="Change Password" textAlignment="CENTER">
+                                       <font>
+                                          <Font name="System Bold" size="13.0" />
+                                       </font>
+                                    </Button>
+                                    <Button fx:id="disconnectButton" mnemonicParsing="false" onAction="#onDisconnectClick" prefHeight="24.0" prefWidth="150.0" style="-fx-background-color: #8fbc8f;" text="Disconnect" textAlignment="CENTER" textFill="#d33a3a">
+                                       <font>
+                                          <Font name="System Bold" size="13.0" />
+                                       </font>
+                                    </Button>
+                                 </children>
+                                 <opaqueInsets>
+                                    <Insets />
+                                 </opaqueInsets>
+                              </VBox>
+                           </children>
+                        </AnchorPane>
+                     </children>
+                  </HBox>
+               </children></AnchorPane>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0" style="-fx-background-color: #dcdcdc;" />
+        </items>
+      </SplitPane>
+   </children>
+</Pane>

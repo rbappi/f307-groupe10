@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ulb.infof307.g10.app.views.Store.StoreViewController">
+    <children>
+        <SplitPane dividerPositions="0.8743718592964824" orientation="VERTICAL" prefHeight="400.0" prefWidth="600.0">
+            <items>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                    <children>
+                        <HBox prefHeight="345.0" prefWidth="598.0">
+                            <children>
+                                <AnchorPane prefHeight="319.0" prefWidth="200.0" style="-fx-background-color: #8fbc8f;">
+                                    <children>
+
+                                        <Label layoutX="25.0" layoutY="171.0" prefHeight="24.0" prefWidth="167.0" text="Welcome to the Store" textFill="#778999">
+                                            <font>
+                                                <Font name="System Bold" size="13.0" />
+                                            </font>
+                                        </Label>
+                                        <Label fx:id="usernameLabel" alignment="CENTER" layoutX="14.0" layoutY="209.0" prefHeight="24.0" prefWidth="102.0" text="Your tokens :" textAlignment="CENTER" textFill="#778999">
+                                            <font>
+                                                <Font name="System Bold" size="13.0" />
+                                            </font>
+                                        </Label>
+                                        <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="25.0" layoutY="21.0" pickOnBounds="true" preserveRatio="true">
+                                            <image>
+                                                <Image url="@../../png/2639750_app_wallet_icon.png" />
+                                            </image>
+                                        </ImageView>
+                              <Label fx:id="money" alignment="CENTER" layoutX="116.0" layoutY="207.0" prefHeight="27.0" prefWidth="38.0" style="-fx-background-color: #7eb27e;" textFill="#677683" />
+                                    </children></AnchorPane>
+                                <AnchorPane fx:id="buttonField" prefHeight="311.0" prefWidth="398.0" style="-fx-background-color: #dcdcdc;">
+                           <children>
+                              <Label layoutX="10.0" layoutY="284.0" prefHeight="27.0" prefWidth="46.0" text="Price :">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font></Label>
+                              <Spinner fx:id="priceSell" layoutX="64.0" layoutY="285.0" />
+                              <Label layoutX="13.0" layoutY="77.0" prefHeight="24.0" prefWidth="38.0" text="Title :" />
+                              <Label layoutX="12.0" layoutY="131.0" text="Author :" />
+                              <Label layoutX="296.0" layoutY="81.0" text="Price :" />
+                              <Label fx:id="titleBuy" layoutX="53.0" layoutY="76.0" prefHeight="27.0" prefWidth="232.0" style="-fx-background-color: #d2d2d2;" />
+                              <Label fx:id="author" layoutX="64.0" layoutY="126.0" prefHeight="27.0" prefWidth="105.0" style="-fx-background-color: #d2d2d2;" />
+                              <Label fx:id="priceBuy" alignment="CENTER" layoutX="333.0" layoutY="76.0" prefHeight="27.0" prefWidth="32.0" style="-fx-background-color: #d2d2d2;" />
+                              <Button fx:id="buyButton" layoutX="331.0" layoutY="127.0" mnemonicParsing="false" onAction="#onBuyClicked" text="Buy" />
+                              <Label layoutX="177.0" layoutY="131.0" text="Amount of cards :" />
+                              <Label fx:id="amountCard" alignment="CENTER" layoutX="280.0" layoutY="126.0" prefHeight="27.0" prefWidth="32.0" style="-fx-background-color: #d2d2d2;" />
+                              <Label layoutX="14.0" layoutY="247.0" prefHeight="17.0" prefWidth="36.0" text="Title : " />
+                              <Label fx:id="titleSell" layoutX="57.0" layoutY="243.0" prefHeight="25.0" prefWidth="313.0" style="-fx-background-color: #d2d2d2;" />
+                              <Button fx:id="sellButton" alignment="CENTER" layoutX="314.0" layoutY="285.0" mnemonicParsing="false" onAction="#onSellClicked" prefHeight="25.0" prefWidth="53.0" text="Sell" />
+                              <ComboBox fx:id="listStore" layoutX="83.0" layoutY="28.0" onAction="#onDeckChanged" prefHeight="25.0" prefWidth="232.0" promptText="list of decks in the store" />
+                              <ComboBox fx:id="listMyDecks" layoutX="105.0" layoutY="195.0" onAction="#onMyDeckChanged" prefHeight="25.0" prefWidth="174.0" promptText="List of my decks" />
+                           </children></AnchorPane>
+                            </children>
+                        </HBox>
+                    </children>
+                </AnchorPane>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="79.0" prefWidth="598.0" style="-fx-background-color: #d3d3d3;">
+               <children>
+                   <Button fx:id="return" layoutX="210.0" layoutY="11.0" mnemonicParsing="false" onAction="#onReturnClicked" prefHeight="24.0" prefWidth="77.0" style="-fx-background-color: #8fbc8f;" text="Return">
+
+
+                   <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                  </Button>
+ <Button fx:id="Update" layoutX="510.0" layoutY="11.0" mnemonicParsing="false" prefHeight="24.0" prefWidth="77.0" style="-fx-background-color: #8fbc8f;" text="Update">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font></Button>
+               </children></AnchorPane>
+
+            </items>
+        </SplitPane>
+    </children>
+</Pane>
